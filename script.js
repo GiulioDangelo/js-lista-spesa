@@ -16,7 +16,6 @@ const arrList = [
 
 let i = 0
 while (i < arrList.length) {
-	console.log(arrList[i]);
 	eleList.innerHTML += `<li>${arrList[i]}</li>`;
     i++;
 }
@@ -24,6 +23,7 @@ while (i < arrList.length) {
 
 // al click aggiungi il valore dell'input alla lista
 eleBtn.addEventListener('click',function () {
+	arrList.push(input.value)
 	eleList.innerHTML += `<li>${input.value}</li>`
 })
 
